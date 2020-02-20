@@ -1,0 +1,99 @@
+h1 {
+    font-family: "Times New Roman", Georgia, serif;
+    text-align: center;
+}
+
+nav {
+    width: auto;
+    max-width: 500px;
+    background-color: salmon;
+    margin: 16px auto;
+}
+
+nav ul {
+    text-align: center;
+    padding: 0;
+}
+
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none; /* Disable the underline! */
+    display: inline-block;
+    padding: 16px 32px;
+}
+
+nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+    background-color: rgb( 50, 50, 50 );
+    color: #fff;
+}
+
+article {
+    width: auto;
+    max-width: 600px;
+    margin-left: auto; /* Margin left and right as auto will centre a BLOCK level element! */
+    margin-right: auto;
+    padding: 16px;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgb( 33, 33, 33 ); /* There are a few ways to do colour... */
+    background-color: #eeeeee;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+  }
+
+  .screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+  }
+
+.hide-me {
+    list-style: none;
+    height: 0;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+    height: 35px;
+}
+
+.overflow-visible {
+    overflow: visible;
+    height: 35px;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+    height: 75px;
+}
