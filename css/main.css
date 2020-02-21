@@ -1,13 +1,60 @@
-h1 {
+* { /* Basic browser reset. */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    background-image: url( '../img/winter.jpg' );
+    background-size: cover; /* Cover the whole element. */
+    background-repeat: no-repeat; /* Show one of the image, instead of unlimited tiles. */
+    background-position: center; /* Can also be co-ordinates like: 50px 75px */
+    background-attachment: fixed;
+}
+
+h1, h2, h4, h5, h6 {
+    font-size: 46px;
     font-family: "Times New Roman", Georgia, serif;
+    padding: 16px 0;
+}
+
+h1 {
     text-align: center;
+    padding-top: 50px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
 }
 
 nav {
     width: auto;
     max-width: 500px;
     background-color: salmon;
-    margin: 16px auto;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    z-index: 2;
 }
 
 nav ul {
@@ -45,6 +92,26 @@ p {
     line-height: 1.5;
     color: rgb( 33, 33, 33 ); /* There are a few ways to do colour... */
     background-color: #eeeeee;
+    margin-bottom: 16px;
+}
+
+#float-practice {
+    float: left;
+    margin-top: 0;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-left: 0;
+    /* margin: 0 16px 16px 0; */
+}
+
+#z-index-practice {
+    display: block;
+    position: absolute;
+    top: 300px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1; /* Visual layering! Think Photoshop... which element should appear "on-top"?! */
 }
 
 /* Text meant only for screen readers. */
