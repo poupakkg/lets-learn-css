@@ -5,6 +5,7 @@
             Let's Learn CSS!
         </title>
         <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css">
         <link rel="stylesheet" href="./css/main.css">
         <script src="./js/scripts.js"></script>
     </head>
@@ -104,5 +105,30 @@
                 &lt;a href="#"&gt;&lt;/a&gt;
             </code>
         </article>
+        <footer>
+            <h2>Social Media Links</h2>
+            <ul id="social-media-links">
+                <li>
+                    <!-- Always use the target attribute with "_blank" as the value when writing EXTERNAL links. Your website will stay in its original browser tab, and the new link will open in a blank / fresh browser tab. -->
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                        <!-- Hiding text in this way leaves it available to search engine and screen-readers! It is always good to have important content readable by those that need it: -->
+                        <span class="screen-reader-text">Facebook</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="fab fa-twitter-square"></i>
+                        <span class="screen-reader-text">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://LinkedIn.com">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="screen-reader-text">Linkedin</span>
+                    </a>
+                </li>
+            </ul>
+        </footer>
     </body>
 </html>
