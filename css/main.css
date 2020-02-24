@@ -46,8 +46,14 @@
 }
 
 code {
+    color: rgb( 215, 215, 215 );
     white-space: pre;
     font-family: 'JetBrains Mono', Consolas, monospace;
+    display: block;
+    max-width: 100%;
+    overflow: auto;
+    background-color: rgb( 55, 55, 55 );
+    border: 2px solid rgb( 33, 33, 33 );
 }
 
 body {
