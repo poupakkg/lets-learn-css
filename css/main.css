@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url();
+}
+
 * { /* Basic browser reset. */
     box-sizing: border-box;
     margin: 0;
@@ -163,4 +168,33 @@ p {
 .overflow-scroll {
     overflow: scroll;
     height: 75px;
+}
+
+#background-bullets,
+#image-bullets {
+    list-style: none;
+    margin: 16px auto;
+    padding: 16px;
+}
+
+#background-bullets li {
+    background-image: url( '../img/phoenix-coin.svg' );
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: top left;
+    padding: 8px 8px 8px 64px;
+}
+
+#image-bullets li {
+    position: relative;
+    padding: 8px 8px 8px 64px;
+}
+
+/* Only do this if the image is important to the content! */
+#image-bullets li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
 }
