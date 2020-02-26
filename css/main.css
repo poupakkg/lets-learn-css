@@ -331,6 +331,57 @@ p {
     z-index: 2;
 }
 
+.transition-transform button {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: gray;
+    background-color: lavenderblush;
+    padding: 8px 16px;
+    border: 3px solid black;
+    margin: 32px;
+    cursor: pointer; /* Mickey Mouse hand! */
+    transition:
+        1s linear border,
+        0.3s ease-in padding,
+        0.5s ease-in-out background-color,
+        2s ease color,
+        4s ease font-size;
+}
+
+.transition-transform button:hover,
+.transition-transform button:focus,
+.transition-transform button:active {
+    color: lavenderblush;
+    font-size: 16px;
+    background-color: gray;
+    padding: 12px 20px;
+    border: 6px dotted indigo;
+}
+
+/* Transform / hover example: */
+
+.transition-transform div {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: chartreuse;
+    cursor: pointer;
+    transition: 1s ease transform;
+}
+
+.transition-transform div + div { /* Find a div BESIDE a div... this is a "directly-followed-by" sibling selector. */
+    background-color: green;
+    pointer-events: none; /* Disable hover/click/etc for the element. */
+    /* WARNING: Will affect your JavaScript and all mouse actions! */
+}
+
+.transition-transform div:hover + div { /* Now we're combining our pseudo (state) selector for hover, and telling the FOLLOWING div how to behave! */
+    transform:
+        translate( 100px, -50px ) /* Move based on X and Y coordinates. */
+        rotate( 35deg ) /* Rotation in degrees. */
+        scale( 2 ); /* Resize the element (1=100%; 0=0%; 2=200%; etc.) */
+}
+
 footer h2 {
     text-align: center;
 }
