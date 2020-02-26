@@ -37,6 +37,21 @@
     font-weight: normal;
     font-style: italic;
 }
+/* Defining a keyframe animation... */
+@keyframes my-animation { /* Pay attention to your name! You use this to call the animation whenever/wherever you need! */
+    0% { /* We get to define at which point in an animation changes occur! */
+        transform: scale( 1 ); /* What should change at this point in the animation??? */
+    }
+    50% {
+        transform: scale( 1.2 );
+    }
+    75% {
+        transform: scale( 1.5 );
+    }
+    100% {
+        transform: scale( 1 );
+    }
+}
 
 * { /* Basic browser reset. */
     box-sizing: border-box;
@@ -392,6 +407,22 @@ p {
         translate( 100px, -50px ) /* Move based on X and Y coordinates. */
         rotate( 35deg ) /* Rotation in degrees. */
         scale( 2 ); /* Resize the element (1=100%; 0=0%; 2=200%; etc.) */
+}
+
+/* Keyframe testing! */
+#keyframe-test {
+    width: 150px;
+    height: 150px;
+    background-color: firebrick;
+    margin: 64px;
+    border-radius: 150px;
+    /* Let's animate! */
+    animation-name: my-animation; /* Call it by name! */
+    animation-duration: 2s; /* How long should the animation be? */
+    animation-iteration-count: infinite; /* How many times should it happen? Can be a number. */
+    /* Check out: https://www.w3schools.com/CSSref/css3_pr_animation-direction.asp */
+    animation-direction: normal; /* Can also be alternate or reverse! */
+    animation-timing-function: linear;
 }
 
 footer h2 {
