@@ -292,6 +292,7 @@ p {
     position: relative;
     overflow: hidden;
     padding: 16px;
+    margin-top: 64px;
 }
 
 .video-section > * {
@@ -328,6 +329,10 @@ p {
     height: 100%;
     background: rgba( 255, 255, 255, 0.33 );
     z-index: 2;
+}
+
+footer h2 {
+    text-align: center;
 }
 
 #social-media-links {
