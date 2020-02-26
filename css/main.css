@@ -359,6 +359,18 @@ p {
     border: 6px dotted indigo;
 }
 
+/* Need more on nth-child pseudo-selectors? Check out: */
+/* https://css-tricks.com/useful-nth-child-recipies/ */
+.transition-transform button:nth-child(2) { /* We can select specific children! This can save us from ID- or CLASS-itus! Only use IDs and classes where you need. */
+    color: lightblue;
+    background-color: black;
+}
+
+.transition-transform button:nth-child(3) {
+    color: lightpink;
+    background-color: darkgoldenrod;
+}
+
 /* Transform / hover example: */
 
 .transition-transform div {
