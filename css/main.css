@@ -108,7 +108,7 @@ nav {
     right: 0;
     bottom: auto;
     left: 0;
-    z-index: 2;
+    z-index: 4;
 }
 
 nav ul {
@@ -286,6 +286,32 @@ p {
     position: absolute;
     top: 100%;
     right: 0;
+}
+
+.video-section {
+    position: relative;
+    overflow: hidden;
+    padding: 16px;
+}
+
+.video-section > * {
+    position: relative;
+    z-index: 3;
+}
+
+.video-section p {
+    background: none;
+}
+
+.video-section video {
+    position: absolute;
+    /* top: 0; */
+    right: 0;
+    bottom: 0;
+    /* left: 0; */
+    width: 150%;
+    height: auto;
+    z-index: 1;
 }
 
 #social-media-links {
